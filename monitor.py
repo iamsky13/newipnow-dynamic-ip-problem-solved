@@ -1,14 +1,19 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import requests
 import time
 import json 
-from selenium.webdriver.support.wait import WebDriverWait
 import os.path
-driver = webdriver.Chrome('C:\Program Files (x86)\Google\chromedriver.exe') #ChromeDriver path
+
+options = Options()
+# options.headless = True
+options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+driver = webdriver.Chrome('C:\Program Files (x86)\Google\chromedriver.exe',chrome_options=options) #ChromeDriver path
 
 while True:
-    username = 'xxxxx' #username of ipdashboard
-    password='xxxx'  #password of ipdashboard
+    username = '111980' #username of ipdashboard
+    password='DJVrR86x'  #password of ipdashboard
     driver.get('https://www.newipnow.com/paid-proxies.html#login')
     username_field = driver.find_element_by_id('user')
     username_field.send_keys(str(username))
