@@ -38,7 +38,7 @@ while True:
                 driver.find_element_by_name('button').click()
 
                 print(data)
-                time.sleep(10)
+                time.sleep(600)
 
 
 
