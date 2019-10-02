@@ -1,0 +1,1 @@
+Using proxy IP requires adding the IP to the dashboard and approving it. However, many ISP's do not provide static IP to regular users. This script fetches the IP and adds it to that dashboard every 10 minutes.
